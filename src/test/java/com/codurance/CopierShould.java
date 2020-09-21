@@ -38,7 +38,7 @@ public class CopierShould {
     private String copiedText = "";
 
     public void expect(String text) {
-      expectedText = text.substring(1, text.indexOf("\n"));
+      expectedText = text.substring(0, text.indexOf("\n"));
     }
 
     public void verify() {
